@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimalist</title>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- TODO HEADAER -->
+
+  <div class="container">
+    <header class="header headear__container">
+      <a href="index.html" class="header__link--logo"><img src="img/logo-site-black.svg" alt="logo of site" class="header__img"></a>
+      <button class="header__button"></button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">HOME</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">PORTFOLIO</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link">CONTACT ME</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <main class="main">
+
+    <!-- TODO HERO -->
+
+    <section class="hero">
+
+      <div class="container hero__container">
+        <div class="hero__box">
+
+          <h1 class="hero__title">
+            Hey, I’m Alex Spencer and I love building beautiful websites
+          </h1>
+
+          <div class="button-about__box">
+            <a href="#about" class="button__img--about"></a>
+            <a href="#about" class="button button--about hero__button--link">ABOUT ME</a>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- TODO ABOUT  -->
+
+    <section class="about" id="about">
+
+      <div class="container about__container">
+
+        <picture class="about__picture">
+          <source
+          srcset="../img/img-man-desktop.webp 1x, img/img-man-desktop@2x.webp 2x"
+          media="(min-width:1000px)"
+          type="image/webp">
+          <source
+          srcset="img/img-man-desktop.jpg 1x, img/img-man-desktop@2x.jpg 2x"
+          media="(min-width:1000px)">
+          <source
+          srcset="img/img-man-tablet.webp 1x, img/img-man-tablet@2x.webp 2x"
+          media="(min-width:700px)"
+          type="image/webp">
+          <source
+          srcset="img/img-man-tablet.jpg 1x, img/img-man-tablet@2x.jpg 2x"
+          media="(min-width:700px)">
+          <source
+          srcset="img/img-man-mobile.webp 1x, img/img-man-mobile@2x.webp 2x"
+          type="image/webp">
+          <img
+          class="about__img"
+          src="img/img-man-mobile.jpg"
+          alt="man just looking"
+          width="311"
+          height="346"
+          srcset="img/img-man-mobile.jpg 1x, img/img-man-mobile@2x.jpg 2x"></picture>
+          <div class="about__box">
+
+            <h2 class="about__title">
+              About Me
+            </h2>
+
+            <p class="about__text">
+              I’m a junior front-end developer looking for a new role in an exciting company.
+              I focus on writing accessible HTML, using modern CSS practices and writing clean
+              JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to
+              whatever tools are required. I’m based in London, UK, but I’m happy working
+              remotely and have experience in remote teams. When I’m not coding, you’ll find
+              me outdoors. I love being out in nature whether that’s going for a walk, run or
+              cycling. I’d love you to check out my work.
+            </p>
+
+            <a href="#" class="button about__button button--white">GO TO PORTFOLIO</a>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="interested">
+
+        <div class="container interested__container">
+
+          <h2 class="interested__title">
+            Interested in doing a project together?
+          </h2>
+
+          <a href="#" class="button button--white interested__button">CONTACT ME</a>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="footer">
+
+      <div class="container footer__container">
+
+        <a href="index.html">
+
+          <img src="img/logo-site-white.svg" alt="logo of site" class="footer__img"></a>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="index.html" class="footer__link">HOME</a>
+            </li>
+            <li class="footer__item footer-item">
+              <a href="#" class="footer__link">PORTFOLIO</a>
+            </li>
+            <li class="footer__item">
+              <a href="contact.html" class="footer__link">CONTACT ME</a>
+            </li>
+          </ul>
+
+          <ul class="footer-web__list">
+            <li class="footer-web__item">
+              <a href="#">
+
+                <svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+                  d="M12.5 0C5.594 0 0 5.51 0 12.305c0 5.437 3.581 10.048 8.547 11.674.625.116.854-.265.854-.592 0-.292-.01-1.066-.016-2.092-3.477.742-4.21-1.65-4.21-1.65-.569-1.42-1.39-1.8-1.39-1.8-1.133-.764.087-.748.087-.748 1.255.086 1.914 1.268 1.914 1.268 1.115 1.881 2.927 1.338 3.641 1.024.113-.797.434-1.338.792-1.646-2.776-.308-5.694-1.366-5.694-6.08 0-1.343.484-2.44 1.286-3.302-.14-.31-.562-1.562.11-3.256 0 0 1.047-.33 3.437 1.261 1-.273 2.063-.409 3.125-.415 1.063.006 2.125.142 3.125.415 2.375-1.591 3.422-1.261 3.422-1.261.672 1.694.25 2.945.125 3.256.797.861 1.281 1.959 1.281 3.302 0 4.727-2.921 5.767-5.703 6.07.438.369.844 1.123.844 2.276 0 1.647-.015 2.97-.015 3.37 0 .322.218.707.859.584 5-1.615 8.579-6.23 8.579-11.659C25 5.51 19.403 0 12.5 0z"
+                  fill="currentcolor"/></svg>
+                </a>
+              </li>
+              <li class="footer-web__item">
+                <a href="#">
+                  <svg width="24" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+                    d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+                    fill="currentcolor"/></svg>
+
+                </a>
+              </li>
+              <li class="footer-web__item">
+                <a href="#">
+                  <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M2.4 0h19.2C22.92 0 24 1.08 24 2.4v19.2c0 1.32-1.08 2.4-2.4 2.4H2.4C1.08 24 0 22.92 0 21.6V2.4C0 1.08 1.08 0 2.4 0zm1.2 20.4h3.6V9.6H3.6v10.8zM5.4 7.56c-1.2 0-2.16-.96-2.16-2.16 0-1.2.96-2.16 2.16-2.16 1.2 0 2.16.96 2.16 2.16 0 1.2-.96 2.16-2.16 2.16zM16.8 20.4h3.6v-6.84c0-2.28-1.92-4.2-4.2-4.2-1.08 0-2.4.72-3 1.68V9.6H9.6v10.8h3.6v-6.36c0-.96.84-1.8 1.8-1.8.96 0 1.8.84 1.8 1.8v6.36z"
+                    fill="currentcolor"/></svg>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+          </footer>
+
+          <script src="js/main.js"></script>
+
+        </body>
+        </html>

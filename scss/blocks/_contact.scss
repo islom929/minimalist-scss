@@ -1,0 +1,93 @@
+.contact__container {
+  margin-bottom: 80px;
+}
+
+.contact__title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  margin: 32px 0 24px;
+}
+
+.map__form {
+  width: 100%;
+}
+
+.map__input {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 16px;
+  display: block;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #F3F3F3;
+  margin-bottom: 24px;
+
+  &:not(:placeholder-shown):not(:focus):valid{
+    border-color: $color-green-hover;
+  }
+
+  &:not(:placeholder-shown):not(:focus):invalid{
+    border-color: #F43030;
+  }
+
+  &::placeholder {
+    font-size: 13px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: $color-black;
+    font-family: $font-public;
+    opacity: 0.4;
+  }
+
+}
+
+.contact__label {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 30px;
+  font-family: $font-public;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.map__texarea {
+  resize: vertical;
+
+  &::placeholder {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: $color-dark-blue;
+  }
+
+}
+
+
+@media screen and (min-width: 700px) {
+
+  .contact__container {
+    margin-bottom: 100px;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+  .contact__title {
+    margin-top: 0;
+  }
+
+  .contact__container {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+    margin-bottom: 110px;
+  }
+
+}

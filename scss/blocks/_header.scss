@@ -1,0 +1,204 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+.header__button {
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 13px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.nav {
+  position: absolute;
+  width: 223px;
+  right: 0;
+  top: 88px;
+  display: none;
+  z-index: 1;
+  background-color: $color-black;
+}
+
+.nav__list {
+  @include list-unstyled;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+
+.nav__item {
+  margin-top: 32px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: $color-white;
+  font-family: $font-public;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $color-green-hover;
+  }
+
+}
+
+
+
+.header--open {
+
+  .nav {
+    display: block;
+  }
+
+  .header__button {
+    background-image: url("../img/icon-cancel.svg");
+    width: 18px;
+    height: 19px;
+  }
+
+}
+
+
+.hero__container {
+
+  &::before {
+  @include pseudoelement-style(100%,280px);
+    background-image: url("../img/img-bg-hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+}
+
+.hero__title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  font-family: $font-ibarra;
+  color: $color-black;
+  margin-top: 24px;
+  margin-bottom: 32px;
+  padding-right: 15px;
+}
+
+.button {
+  @include button;
+}
+
+.button-about__box {
+  position: relative;
+  background-color: $color-dark-blue;
+  width: 200px;
+
+  &:hover {
+    background-color: $color-green-hover;
+  }
+
+  &:hover .button__img--about {
+    background-image: url("../img/icon-arrow-about-btn-hover.svg");
+  }
+
+  &:active {
+    background-color: rgba(32, 58, 76, 0.1);
+  }
+
+  &:active .button--about {
+    color: rgba(32, 58, 76, 1);
+  }
+
+}
+
+.button__img--about {
+  width: 48px;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url("../img/icon-arrow-about-btn.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 12px;
+  background-position: center;
+}
+
+.button--about {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: $font-public;
+  color: $color-white;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  width: 200px;
+  padding-left: 50px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 700px) {
+
+  .headear {
+    display: flex;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 47px;
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+    position: relative;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    top: auto;
+  }
+
+  .nav__list {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav__item {
+    margin: 0;
+
+    &:not(:first-child) {
+      margin-left: 33px;
+    }
+    
+  }
+
+  .nav__link {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $color-black;
+  }
+
+}
