@@ -25,51 +25,12 @@
   margin-bottom: 24px;
 }
 
-
-.touch__button {
-  padding: 17px 24px;
-  background-color: $color-dark-blue;
-  border: 1px solid transparent;
-  color: $color-white;
-  font-size: 12px;
-  line-height: 14px;
-  text-align: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-family: $font-public;
-
-  &:hover {
-    background-color: transparent;
-    border-color: $font-public;
-    color: $font-public;
-  }
-
-}
-
-.footer-web__list {
-  padding-left: 0;
-  list-style: none;
-  margin: 0;
-  display: flex;
-  width: 120px;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 24px;
-}
-
 .touch__item {
- 
+
   svg {
     color: $color-black;
   }
 
-}
-
-.footer-web__item {
-
-  a:hover svg {
-    color: $color-green-hover;
-  }
 }
 
 @media screen and (min-width: 700px) {

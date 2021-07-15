@@ -1,0 +1,19 @@
+.touch__button {
+  padding: 17px 24px;
+  background-color: $color-dark-blue;
+  border: 1px solid transparent;
+  color: $color-white;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: $font-public;
+
+  &:hover {
+    background-color: transparent;
+    border-color: $font-public;
+    color: $font-public;
+  }
+
+}
