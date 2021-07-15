@@ -6,7 +6,7 @@
 
 @mixin link-unstyled($fontWeight){
   text-decoration: none;
-  color: $fontWeight;
+  font-weight: $fontWeight;
 }
 
 @mixin pseudoelement-style($width,$height) {
@@ -33,4 +33,3 @@
 @mixin button {
   text-decoration: none;
 }
-
