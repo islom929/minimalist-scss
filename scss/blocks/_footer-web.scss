@@ -19,3 +19,12 @@
     color: $color-green-hover;
   }
 }
+
+@media screen and (min-width: 700px) {
+  
+  .footer-web__list {
+    margin-left: auto;
+    margin-top: 0;
+  }
+
+}

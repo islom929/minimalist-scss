@@ -28,7 +28,7 @@
   &:not(:placeholder-shown):not(:focus):valid{
     border-color: $color-green-hover;
   }
- 
+
   &:not(:placeholder-shown):not(:focus):invalid{
     border-color: #F43030;
   }

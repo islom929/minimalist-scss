@@ -4,7 +4,7 @@
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
- */ 
+ */
 html {
   line-height: 1.15;
   /* 1 */
@@ -389,6 +389,57 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.touch__button {
+  padding: 17px 24px;
+  background-color: #203A4C;
+  border: 1px solid transparent;
+  color: #fff;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Public Sans", "Arial", sans-serif;
+}
+
+.touch__button:hover {
+  background-color: #5FB4A2;
+  border-color: "Public Sans", "Arial", sans-serif;
+  color: #fff;
+}
+
+.footer-web__list {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 120px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 24px;
+}
+
+.footer-web__item svg {
+  color: #fff;
+}
+
+.footer-web__item a:hover svg {
+  color: #5FB4A2;
+}
+
+@media screen and (min-width: 700px) {
+  .footer-web__list {
+    margin-left: auto;
+    margin-top: 0;
+  }
 }
 
 .visually-hidden {
@@ -1048,25 +1099,6 @@ img {
   color: #33323D;
 }
 
-.touch__button {
-  padding: 17px 24px;
-  background-color: #203A4C;
-  border: 1px solid transparent;
-  color: #fff;
-  font-size: 12px;
-  line-height: 14px;
-  text-align: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-family: "Public Sans", "Arial", sans-serif;
-}
-
-.touch__button:hover {
-  background-color: transparent;
-  border-color: "Public Sans", "Arial", sans-serif;
-  color: "Public Sans", "Arial", sans-serif;
-}
-
 @media screen and (min-width: 700px) {
   .touch__box {
     margin-top: 50px;
@@ -1166,31 +1198,6 @@ img {
   color: #5FB4A2;
 }
 
-.footer-web__list {
-  padding-left: 0;
-  list-style: none;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 120px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 24px;
-}
-
-.footer-web__item svg {
-  color: #fff;
-}
-
-.footer-web__item a:hover svg {
-  color: #5FB4A2;
-}
-
 @media screen and (min-width: 700px) {
   .footer {
     padding-top: 24px;
@@ -1211,10 +1218,6 @@ img {
   }
   .footer-item {
     margin: 0 42px;
-  }
-  .footer-web__list {
-    margin-left: auto;
-    margin-top: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

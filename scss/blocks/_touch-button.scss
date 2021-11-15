@@ -11,9 +11,9 @@
   font-family: $font-public;
 
   &:hover {
-    background-color: transparent;
+    background-color: $color-green-hover;
     border-color: $font-public;
-    color: $font-public;
+    color: $color-white;
   }
 
 }
